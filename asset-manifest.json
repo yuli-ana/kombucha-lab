@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/kombucha-lab/static/css/main.a6a08d49.chunk.css",
-    "main.js": "/kombucha-lab/static/js/main.b225ebf2.chunk.js",
-    "main.js.map": "/kombucha-lab/static/js/main.b225ebf2.chunk.js.map",
+    "main.css": "/kombucha-lab/static/css/main.9112016c.chunk.css",
+    "main.js": "/kombucha-lab/static/js/main.e4cdd0ce.chunk.js",
+    "main.js.map": "/kombucha-lab/static/js/main.e4cdd0ce.chunk.js.map",
     "runtime-main.js": "/kombucha-lab/static/js/runtime-main.6759c975.js",
     "runtime-main.js.map": "/kombucha-lab/static/js/runtime-main.6759c975.js.map",
-    "static/js/2.219f6d2c.chunk.js": "/kombucha-lab/static/js/2.219f6d2c.chunk.js",
-    "static/js/2.219f6d2c.chunk.js.map": "/kombucha-lab/static/js/2.219f6d2c.chunk.js.map",
+    "static/js/2.ba91fd80.chunk.js": "/kombucha-lab/static/js/2.ba91fd80.chunk.js",
+    "static/js/2.ba91fd80.chunk.js.map": "/kombucha-lab/static/js/2.ba91fd80.chunk.js.map",
     "index.html": "/kombucha-lab/index.html",
-    "precache-manifest.2e1da5ec597f4fd12966085566462905.js": "/kombucha-lab/precache-manifest.2e1da5ec597f4fd12966085566462905.js",
+    "precache-manifest.a1cbfc0cf912b2fe006c078c27493f7c.js": "/kombucha-lab/precache-manifest.a1cbfc0cf912b2fe006c078c27493f7c.js",
     "service-worker.js": "/kombucha-lab/service-worker.js",
-    "static/css/main.a6a08d49.chunk.css.map": "/kombucha-lab/static/css/main.a6a08d49.chunk.css.map",
-    "static/js/2.219f6d2c.chunk.js.LICENSE.txt": "/kombucha-lab/static/js/2.219f6d2c.chunk.js.LICENSE.txt"
+    "static/css/main.9112016c.chunk.css.map": "/kombucha-lab/static/css/main.9112016c.chunk.css.map",
+    "static/js/2.ba91fd80.chunk.js.LICENSE.txt": "/kombucha-lab/static/js/2.ba91fd80.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6759c975.js",
-    "static/js/2.219f6d2c.chunk.js",
-    "static/css/main.a6a08d49.chunk.css",
-    "static/js/main.b225ebf2.chunk.js"
+    "static/js/2.ba91fd80.chunk.js",
+    "static/css/main.9112016c.chunk.css",
+    "static/js/main.e4cdd0ce.chunk.js"
   ]
 }

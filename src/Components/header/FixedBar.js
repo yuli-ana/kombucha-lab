@@ -34,7 +34,7 @@ class FixedBar extends Component {
                     <div className={`modal ${this.state.activeModal ? 'openModal' : 'closeModal'}`}>
                         <div className={this.state.activeModal ? 'bg' : 'bg-none'}></div>
                         <button onClick={this.handleClick} className='btn-close'><FontAwesomeIcon icon={faTimes} /></button>
-                        <ModalList>
+                        <ModalList total={this.props.totalCounter}>
                             {(this.props.items || [])
                                 .reduce((acc, value) => {
 

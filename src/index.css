@@ -367,6 +367,11 @@ p {
   margin: 0 auto;
 }
 
+.btn {
+  background-color: transparent;
+  border: unset;
+}
+
 .btn-add {
   width: 90%;
   border: 1px solid rgb(233, 150, 122);
@@ -382,8 +387,6 @@ p {
 }
 
 .btn-cart {
-  background-color: transparent;
-  border: unset;
   margin-right: 8.5%;
 }
 
@@ -405,8 +408,17 @@ p {
   transform: scaleY(0);
 }
 
+.btn-close {
+  font-size: 3.5rem;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  color: darkolivegreen;
+}
+
 .icon {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: darkolivegreen;
 }
 
@@ -417,7 +429,7 @@ p {
   margin: 0 -20px;
 }
 
-.row.row--end {
+.row.row--center {
   justify-content: center;
 }
 
@@ -560,14 +572,20 @@ h1 {
 
 .modal {
   position: absolute;
-  width: 40%;
+  width: 45%;
   background: white;
   top: 0;
-  right: -40%;
-  padding: 50px;
+  right: -45%;
+  padding: 40px 50px;
   overflow: scroll;
   height: 80vh;
   transition: right 300ms ease-in;
+}
+
+.modal-list-title {
+  font-size: 3rem;
+  margin: 40px 0 80px;
+  text-align: center;
 }
 
 .bg {
@@ -590,7 +608,7 @@ h1 {
 }
 
 .closeModal {
-  right: -40%;
+  right: -45%;
 }
 
 /* Cart List */
@@ -609,7 +627,7 @@ h1 {
 }
 
 .item-info-price {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
 }
 
 .cart-item-info p {
@@ -618,19 +636,21 @@ h1 {
 
 .cart-item-info h3 {
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin-top: 10px;
 }
 
-
 .cart-item-count {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border: 1px solid #000;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+}
+
+.cart-item-update {
   position: absolute;
   bottom: 0;
   right: 40px;
@@ -638,12 +658,4 @@ h1 {
 
 .row.cart-item {
   margin-bottom: 50px;
-}
-
-.btn-remove {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: transparent;
-  border: unset;
 }

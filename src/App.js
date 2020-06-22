@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from 'react';
-import Header from './components/Header';
+import Header from './components/header/Header';
 import Main from './components/catalogue/Main';
-import List from './components/catalogue/List';
-import FixedBar from './components/FixedBar';
+import CatalogueList from './components/catalogue/CatalogueList';
+import FixedBar from './components/header/FixedBar';
 import firebase from './components/firebase';
+import CatalogueItem from './components/catalogue/CatalogueItem';
 
 import './App.css';
 
@@ -64,28 +65,14 @@ class App extends Component {
         <Header />
         <FixedBar totalCounter={this.state.cartCounter} count={this.state.count} items={this.state.modalArr}  />
         <Main>
-          <List>
+          <CatalogueList>
             {this.state.dataArr.map(item => {
               return (
-                <li
-                  className='col-33 catalogue-item'
-                  key={item.id}>
-                  <img src={item.image} alt={item.name} />
-                  <div className='item-details'>
-                    <h2 className='item-title'>{item.name}</h2>
-                    <p className='item-price'>${item.price}.00</p>
-                  </div>
-                  <div className='row'>
-                    <button
-                      onClick={() => this.handleClick(item.id)}
-                      className='btn-add col-80'>Add to cart
-                    </button>
-                    <p className='col-20 item-counter'>{this.state.count[item.id] || 0}</p>
-                  </div>
-                </li>
+                //Created a separate item component
+                <CatalogueItem key={item.id} id={item.id} name={item.name} price={item.price} image={item.image}  updateCount={() => this.handleClick(item.id)} itemCounter={this.state.count[item.id] || 0} />
               )
             })}
-          </List>
+          </CatalogueList>
         </Main>
       </Fragment>
     )

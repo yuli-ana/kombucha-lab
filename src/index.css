@@ -316,6 +316,11 @@ textarea {
 }
 
 /* Typography */
+/* @font-face {
+  font-family: Lato;
+  src: url(/assets/fonts/Lato.woff2) format("woff2"),
+    url(/assets/fonts/Lato.woff) format("woff");
+} */
 
 html {
   font-size: 62.5%;
@@ -323,6 +328,7 @@ html {
 
 body {
   font-size: 1.4rem;
+  font-family: Lato;
 }
 
 /* General styles */
@@ -345,6 +351,7 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  color: #000;
 }
 
 h1,
@@ -360,10 +367,10 @@ p {
   margin: 0 auto;
 }
 
-.btn {
+.btn-add {
   width: 90%;
-  border: 1px solid darksalmon;
-  background-color: darksalmon;
+  border: 1px solid rgb(233, 150, 122);
+  background-color: rgba(233, 150, 122, 0.5);
   overflow: hidden;
   padding: 10px 0;
   margin-top: 20px;
@@ -380,8 +387,7 @@ p {
   margin-right: 8.5%;
 }
 
-/* 
-.btn::after {
+.btn-add::after {
   content: "";
   position: absolute;
   top: 0;
@@ -394,10 +400,10 @@ p {
   z-index: -1;
 }
 
-.btn:hover::after,
-.btn:focus::after {
+.btn-add:hover::after,
+.btn-add:focus::after {
   transform: scaleY(0);
-} */
+}
 
 .icon {
   font-size: 2.5rem;
@@ -430,6 +436,12 @@ p {
   margin: 20px;
   text-align: center;
   padding: 30px;
+}
+
+.col-50 {
+  flex: 0 1 50%;
+  max-width: calc(50% - 20px);
+  margin: 0 10px;
 }
 
 .col-80 {
@@ -471,8 +483,10 @@ section {
 }
 
 h1 {
+  position: relative;
   font-size: 5rem;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 /* Fixed Bar */
@@ -510,7 +524,7 @@ h1 {
 .item-price {
   font-size: 2rem;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .item-counter {
@@ -530,13 +544,30 @@ h1 {
 }
 
 .modal {
-  width: 40%;
   position: absolute;
+  width: 40%;
   background: white;
-  height: 300px;
   top: 0;
   right: -40%;
   padding: 50px;
+  overflow: scroll;
+  height: 80vh;
+  transition: right 300ms ease-in;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -10;
+}
+
+.bg-none {
+  display: none;
 }
 
 .openModal {
@@ -547,12 +578,15 @@ h1 {
   right: -40%;
 }
 
-/* .btn-close {
-  background-color: transparent;
-  border: none;
-  font-size: 3.5rem;
-} */
+/* Cart List */
+.cart-item-info {
+  position: relative;
+}
 
-/* .close {
-  display: none;
-} */
+.btn-remove {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  border: unset;
+}

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/yuli-ana/kombucha-lab/static/css/main.9112016c.chunk.css",
-    "main.js": "/yuli-ana/kombucha-lab/static/js/main.5c7d2210.chunk.js",
-    "main.js.map": "/yuli-ana/kombucha-lab/static/js/main.5c7d2210.chunk.js.map",
-    "runtime-main.js": "/yuli-ana/kombucha-lab/static/js/runtime-main.0c2eb4d9.js",
-    "runtime-main.js.map": "/yuli-ana/kombucha-lab/static/js/runtime-main.0c2eb4d9.js.map",
-    "static/js/2.aa188877.chunk.js": "/yuli-ana/kombucha-lab/static/js/2.aa188877.chunk.js",
-    "static/js/2.aa188877.chunk.js.map": "/yuli-ana/kombucha-lab/static/js/2.aa188877.chunk.js.map",
-    "index.html": "/yuli-ana/kombucha-lab/index.html",
-    "precache-manifest.5d13163f6296dd7df837baa50fa5b6a9.js": "/yuli-ana/kombucha-lab/precache-manifest.5d13163f6296dd7df837baa50fa5b6a9.js",
-    "service-worker.js": "/yuli-ana/kombucha-lab/service-worker.js",
-    "static/css/main.9112016c.chunk.css.map": "/yuli-ana/kombucha-lab/static/css/main.9112016c.chunk.css.map",
-    "static/js/2.aa188877.chunk.js.LICENSE.txt": "/yuli-ana/kombucha-lab/static/js/2.aa188877.chunk.js.LICENSE.txt"
+    "main.css": "/kombucha-lab/static/css/main.a6a08d49.chunk.css",
+    "main.js": "/kombucha-lab/static/js/main.b225ebf2.chunk.js",
+    "main.js.map": "/kombucha-lab/static/js/main.b225ebf2.chunk.js.map",
+    "runtime-main.js": "/kombucha-lab/static/js/runtime-main.6759c975.js",
+    "runtime-main.js.map": "/kombucha-lab/static/js/runtime-main.6759c975.js.map",
+    "static/js/2.219f6d2c.chunk.js": "/kombucha-lab/static/js/2.219f6d2c.chunk.js",
+    "static/js/2.219f6d2c.chunk.js.map": "/kombucha-lab/static/js/2.219f6d2c.chunk.js.map",
+    "index.html": "/kombucha-lab/index.html",
+    "precache-manifest.2e1da5ec597f4fd12966085566462905.js": "/kombucha-lab/precache-manifest.2e1da5ec597f4fd12966085566462905.js",
+    "service-worker.js": "/kombucha-lab/service-worker.js",
+    "static/css/main.a6a08d49.chunk.css.map": "/kombucha-lab/static/css/main.a6a08d49.chunk.css.map",
+    "static/js/2.219f6d2c.chunk.js.LICENSE.txt": "/kombucha-lab/static/js/2.219f6d2c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0c2eb4d9.js",
-    "static/js/2.aa188877.chunk.js",
-    "static/css/main.9112016c.chunk.css",
-    "static/js/main.5c7d2210.chunk.js"
+    "static/js/runtime-main.6759c975.js",
+    "static/js/2.219f6d2c.chunk.js",
+    "static/css/main.a6a08d49.chunk.css",
+    "static/js/main.b225ebf2.chunk.js"
   ]
 }

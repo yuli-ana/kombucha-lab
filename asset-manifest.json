@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/yuli-ana/kombucha-lab.git/static/css/main.5f361e03.chunk.css",
-    "main.js": "/yuli-ana/kombucha-lab.git/static/js/main.81a5da26.chunk.js",
-    "main.js.map": "/yuli-ana/kombucha-lab.git/static/js/main.81a5da26.chunk.js.map",
-    "runtime-main.js": "/yuli-ana/kombucha-lab.git/static/js/runtime-main.ac598121.js",
-    "runtime-main.js.map": "/yuli-ana/kombucha-lab.git/static/js/runtime-main.ac598121.js.map",
-    "static/js/2.8a841b77.chunk.js": "/yuli-ana/kombucha-lab.git/static/js/2.8a841b77.chunk.js",
-    "static/js/2.8a841b77.chunk.js.map": "/yuli-ana/kombucha-lab.git/static/js/2.8a841b77.chunk.js.map",
-    "index.html": "/yuli-ana/kombucha-lab.git/index.html",
-    "precache-manifest.3d666229b90f38bdf43884631e5ddcf2.js": "/yuli-ana/kombucha-lab.git/precache-manifest.3d666229b90f38bdf43884631e5ddcf2.js",
-    "service-worker.js": "/yuli-ana/kombucha-lab.git/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/yuli-ana/kombucha-lab.git/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.8a841b77.chunk.js.LICENSE.txt": "/yuli-ana/kombucha-lab.git/static/js/2.8a841b77.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/yuli-ana/kombucha-lab.git/static/media/logo.5d5d9eef.svg"
+    "main.css": "/yuli-ana/kombucha-lab/static/css/main.9112016c.chunk.css",
+    "main.js": "/yuli-ana/kombucha-lab/static/js/main.5c7d2210.chunk.js",
+    "main.js.map": "/yuli-ana/kombucha-lab/static/js/main.5c7d2210.chunk.js.map",
+    "runtime-main.js": "/yuli-ana/kombucha-lab/static/js/runtime-main.0c2eb4d9.js",
+    "runtime-main.js.map": "/yuli-ana/kombucha-lab/static/js/runtime-main.0c2eb4d9.js.map",
+    "static/js/2.aa188877.chunk.js": "/yuli-ana/kombucha-lab/static/js/2.aa188877.chunk.js",
+    "static/js/2.aa188877.chunk.js.map": "/yuli-ana/kombucha-lab/static/js/2.aa188877.chunk.js.map",
+    "index.html": "/yuli-ana/kombucha-lab/index.html",
+    "precache-manifest.5d13163f6296dd7df837baa50fa5b6a9.js": "/yuli-ana/kombucha-lab/precache-manifest.5d13163f6296dd7df837baa50fa5b6a9.js",
+    "service-worker.js": "/yuli-ana/kombucha-lab/service-worker.js",
+    "static/css/main.9112016c.chunk.css.map": "/yuli-ana/kombucha-lab/static/css/main.9112016c.chunk.css.map",
+    "static/js/2.aa188877.chunk.js.LICENSE.txt": "/yuli-ana/kombucha-lab/static/js/2.aa188877.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ac598121.js",
-    "static/js/2.8a841b77.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.81a5da26.chunk.js"
+    "static/js/runtime-main.0c2eb4d9.js",
+    "static/js/2.aa188877.chunk.js",
+    "static/css/main.9112016c.chunk.css",
+    "static/js/main.5c7d2210.chunk.js"
   ]
 }

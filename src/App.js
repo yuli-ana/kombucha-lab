@@ -13,8 +13,10 @@ class App extends Component {
 
     this.state = {
       dataArr: [],
-      count: 0,
-      modalArr: [],
+      count: {},
+      cartCounter: 0,
+      modalArr: [
+      ],
     }
   }
 
@@ -34,18 +36,24 @@ class App extends Component {
       this.setState({
         dataArr: newState,
       })
-
     })
   }
 
-  handleClick = (e) => {
-    e.preventDefault();
-    
+  handleClick = (id) => {
+    const newItem = this.state.dataArr.find(item => item.id === id);
 
-      this.setState({
-          count: this.state.count + 1,
-        });
-        
+    let currentCount = this.state.count[newItem.id] || 0;
+
+
+    this.setState({
+      modalArr: [...this.state.modalArr, newItem],
+      count: { 
+        ...this.state.count, 
+        [newItem.id]: currentCount + 1 
+      },
+
+      cartCounter: this.state.cartCounter + 1,
+    })
   }
 
 
@@ -54,21 +62,26 @@ class App extends Component {
     return (
       <Fragment>
         <Header />
-        <FixedBar number={this.state.count} />
+        <FixedBar totalCounter={this.state.cartCounter} count={this.state.count} items={this.state.modalArr}  />
         <Main>
           <List>
             {this.state.dataArr.map(item => {
               return (
-                <li className='col-33 catalogue-item' key={item.id}>
+                <li
+                  className='col-33 catalogue-item'
+                  key={item.id}>
                   <img src={item.image} alt={item.name} />
                   <div className='item-details'>
                     <h2 className='item-title'>{item.name}</h2>
                     <p className='item-price'>${item.price}.00</p>
                   </div>
                   <div className='row'>
-                    <button onClick={this.handleClick} className='btn col-80'>Add to cart</button>
-                    <p className='col-20 item-counter'>{this.state.count}</p>
-                  </div> 
+                    <button
+                      onClick={() => this.handleClick(item.id)}
+                      className='btn-add col-80'>Add to cart
+                    </button>
+                    <p className='col-20 item-counter'>{this.state.count[item.id] || 0}</p>
+                  </div>
                 </li>
               )
             })}

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kombucha-lab/static/css/main.7518531b.chunk.css",
+    "main.css": "/kombucha-lab/static/css/main.6c4b6d0f.chunk.css",
     "main.js": "/kombucha-lab/static/js/main.d4c11968.chunk.js",
     "main.js.map": "/kombucha-lab/static/js/main.d4c11968.chunk.js.map",
     "runtime-main.js": "/kombucha-lab/static/js/runtime-main.6759c975.js",
@@ -8,15 +8,15 @@
     "static/js/2.87cbbdff.chunk.js": "/kombucha-lab/static/js/2.87cbbdff.chunk.js",
     "static/js/2.87cbbdff.chunk.js.map": "/kombucha-lab/static/js/2.87cbbdff.chunk.js.map",
     "index.html": "/kombucha-lab/index.html",
-    "precache-manifest.5211e8879970563db287c5a8aaa4c32c.js": "/kombucha-lab/precache-manifest.5211e8879970563db287c5a8aaa4c32c.js",
+    "precache-manifest.c637e219362a8b9345eb9cc7e76b5756.js": "/kombucha-lab/precache-manifest.c637e219362a8b9345eb9cc7e76b5756.js",
     "service-worker.js": "/kombucha-lab/service-worker.js",
-    "static/css/main.7518531b.chunk.css.map": "/kombucha-lab/static/css/main.7518531b.chunk.css.map",
+    "static/css/main.6c4b6d0f.chunk.css.map": "/kombucha-lab/static/css/main.6c4b6d0f.chunk.css.map",
     "static/js/2.87cbbdff.chunk.js.LICENSE.txt": "/kombucha-lab/static/js/2.87cbbdff.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6759c975.js",
     "static/js/2.87cbbdff.chunk.js",
-    "static/css/main.7518531b.chunk.css",
+    "static/css/main.6c4b6d0f.chunk.css",
     "static/js/main.d4c11968.chunk.js"
   ]
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kombucha-lab/precache-manifest.c637e219362a8b9345eb9cc7e76b5756.js"
+  "/kombucha-lab/precache-manifest.4bfa391e37d71cb104d35132bd502a70.js"
 );
 
 self.addEventListener('message', (event) => {

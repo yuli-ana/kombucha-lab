@@ -682,7 +682,17 @@ p {
   }
 
   .modal {
+    width: 60%;
+    right: -60%;
     padding: 20px 30px;
+  }
+
+  .remove-overlay {
+    background-color: transparent;
+  }
+
+  .open-modal {
+    right: 0;
   }
 
   .cart-item-info h3,
@@ -697,13 +707,13 @@ p {
     border-radius: unset;
     padding: 17px 0;
   }
-  
+
   .section .row {
     flex-direction: column;
     align-items: center;
   }
 
-.col-33 {
+  .col-33 {
     flex-basis: 75%;
     max-width: calc(75% - 40px);
     padding: 0;

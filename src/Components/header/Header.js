@@ -12,7 +12,7 @@ const Header = () => {
                     <FixedBar
                         text='buy'/>
                     <div 
-                    className='header-title'>
+                    className='header-title col-auto'>
                         <h1>Kombucha Lab</h1>
                     </div>
                 </div>

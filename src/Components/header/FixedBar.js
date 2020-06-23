@@ -30,10 +30,10 @@ class FixedBar extends Component {
         return (
             <Fragment>
                 <div className='fixed-bar'>
-                    <button onClick={this.handleCartClick} className='btn-cart'><FontAwesomeIcon className='icon' icon={faShoppingCart} />{this.props.totalCounter}</button>
-                    <div className={`modal ${this.state.activeModal ? 'openModal' : 'closeModal'}`}>
-                        <div className={this.state.activeModal ? 'bg' : 'bg-none'}></div>
-                        <button onClick={this.handleClick} className='btn-close'><FontAwesomeIcon icon={faTimes} /></button>
+                    <button onClick={this.handleCartClick} className='btn btn-cart'><FontAwesomeIcon className='icon' icon={faShoppingCart} />{this.props.totalCounter}</button>
+                    <div className={`modal ${this.state.activeModal ? 'open-modal' : 'modal'}`}>
+                        <div className={this.state.activeModal ? 'add-overlay' : 'remove-overlay'}></div>
+                        <button onClick={this.handleClick} className='btn btn-close'><FontAwesomeIcon icon={faTimes} /></button>
                         <ModalList total={this.props.totalCounter}>
                             {(this.props.items || [])
                                 .reduce((acc, value) => {

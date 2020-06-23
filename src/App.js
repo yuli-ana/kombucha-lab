@@ -48,9 +48,9 @@ class App extends Component {
 
     this.setState({
       modalArr: [...this.state.modalArr, newItem],
-      count: { 
-        ...this.state.count, 
-        [newItem.id]: currentCount + 1 
+      count: {
+        ...this.state.count,
+        [newItem.id]: currentCount + 1
       },
 
       cartCounter: this.state.cartCounter + 1,
@@ -58,22 +58,23 @@ class App extends Component {
   }
 
 
-
   render() {
     return (
       <Fragment>
-        <Header />
-        <FixedBar totalCounter={this.state.cartCounter} count={this.state.count} items={this.state.modalArr}  />
-        <Main>
-          <CatalogueList>
-            {this.state.dataArr.map(item => {
-              return (
-                //Created a separate item component
-                <CatalogueItem key={item.id} id={item.id} name={item.name} price={item.price} image={item.image}  updateCount={() => this.handleClick(item.id)} itemCounter={this.state.count[item.id] || 0} />
-              )
-            })}
-          </CatalogueList>
-        </Main>
+        <div className="overflow-hidden">
+          <Header />
+          <FixedBar totalCounter={this.state.cartCounter} count={this.state.count} items={this.state.modalArr} />
+          <Main>
+            <CatalogueList>
+              {this.state.dataArr.map(item => {
+                return (
+                  //Created a separate item component
+                  <CatalogueItem key={item.id} id={item.id} name={item.name} price={item.price} image={item.image} updateCount={() => this.handleClick(item.id)} itemCounter={this.state.count[item.id] || 0} />
+                )
+              })}
+            </CatalogueList>
+          </Main>
+        </div>
       </Fragment>
     )
   }

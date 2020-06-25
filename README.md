@@ -1,6 +1,6 @@
 # Project 5 "Kombucha Lab"
 
-"Kombucha Lab" it's Online Shop where you can find you favourite Kombucha drink.
+"Kombucha Lab" it's an online store app made with React and Firebase database. The app allows user to select favourite Kombucha drink add it to the cart. 
 
 Live site: https://yuli-ana.github.io/kombucha-lab/
 

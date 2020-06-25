@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ModalItem from '../modal/ModalItem'
 import ModalList from '../modal/ModalList';
 import CompleteOrder from '../modal/CompleteOrder';
+// import TotalPrice from '../modal/TotalPrice';
 
 class FixedBar extends Component {
     constructor() {
@@ -14,12 +15,14 @@ class FixedBar extends Component {
         }
     }
 
+    // Update to true when ModalCart is open
     handleCartClick = () => {
         this.setState({
             activeModal: true,
         })
     }
 
+    // Update to false when modal is closed
     handleClick = () => {
         this.setState({
             activeModal: false,
@@ -30,10 +33,26 @@ class FixedBar extends Component {
         return (
             <Fragment>
                 <div className='fixed-bar'>
-                    <button onClick={this.handleCartClick} className='btn btn-cart'><FontAwesomeIcon className='icon' icon={faShoppingCart} />{this.props.cartCounter}</button>
-                    <div className={`modal ${this.state.activeModal ? 'open-modal' : 'modal'}`}>
-                        <div className={this.state.activeModal ? 'add-overlay' : 'remove-overlay'}></div>
-                        <button onClick={this.handleClick} className='btn btn-close'><FontAwesomeIcon icon={faTimes} /></button>
+                    <button
+                        onClick={this.handleCartClick}
+                        className='btn btn-cart'>
+                        <FontAwesomeIcon
+                            className='icon'
+                            icon={faShoppingCart} />
+                        {this.props.cartCounter}
+                    </button>
+
+                    <div
+                        className={`modal ${this.state.activeModal ? 'open-modal' : 'modal'}`}>
+                        <div
+                            className={this.state.activeModal ? 'add-overlay' : 'remove-overlay'}>
+                        </div>
+                        <button
+                            onClick={this.handleClick}
+                            className='btn btn-close'>
+                            <FontAwesomeIcon
+                                icon={faTimes} />
+                        </button>
                         <ModalList cartCounter={this.props.cartCounter}>
                             {(this.props.modalCarts || [])
                                 .reduce((acc, value) => {
@@ -46,12 +65,18 @@ class FixedBar extends Component {
                                 }, [])
                                 .map((item, i) => {
                                     return (
-                                        <ModalItem  key={i} name={item.name} price={item.price} currentIdCount={this.props.count[item.id]} image={item.image} />
+                                        <ModalItem
+                                            key={i}
+                                            name={item.name}
+                                            price={item.price}
+                                            currentIdCount={this.props.count[item.id]}
+                                            image={item.image}
+                                        />
                                     )
                                 })
                             }
                         </ModalList>
-                        <CompleteOrder />
+                        <CompleteOrder modalCarts={this.props.modalCarts} count={this.props.count} />
                     </div>
                 </div>
             </Fragment>

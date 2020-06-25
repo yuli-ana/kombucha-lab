@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/kombucha-lab/static/css/main.ffdeb605.chunk.css",
-    "main.js": "/kombucha-lab/static/js/main.23edd43c.chunk.js",
-    "main.js.map": "/kombucha-lab/static/js/main.23edd43c.chunk.js.map",
+    "main.css": "/kombucha-lab/static/css/main.91994cb6.chunk.css",
+    "main.js": "/kombucha-lab/static/js/main.c11ada8f.chunk.js",
+    "main.js.map": "/kombucha-lab/static/js/main.c11ada8f.chunk.js.map",
     "runtime-main.js": "/kombucha-lab/static/js/runtime-main.6759c975.js",
     "runtime-main.js.map": "/kombucha-lab/static/js/runtime-main.6759c975.js.map",
-    "static/js/2.87cbbdff.chunk.js": "/kombucha-lab/static/js/2.87cbbdff.chunk.js",
-    "static/js/2.87cbbdff.chunk.js.map": "/kombucha-lab/static/js/2.87cbbdff.chunk.js.map",
+    "static/js/2.02c7775e.chunk.js": "/kombucha-lab/static/js/2.02c7775e.chunk.js",
+    "static/js/2.02c7775e.chunk.js.map": "/kombucha-lab/static/js/2.02c7775e.chunk.js.map",
     "index.html": "/kombucha-lab/index.html",
-    "precache-manifest.20044d5d39f1f2525303d9ca152c5192.js": "/kombucha-lab/precache-manifest.20044d5d39f1f2525303d9ca152c5192.js",
+    "precache-manifest.2dfe7c87fa92308cea48af7295ce441e.js": "/kombucha-lab/precache-manifest.2dfe7c87fa92308cea48af7295ce441e.js",
     "service-worker.js": "/kombucha-lab/service-worker.js",
-    "static/css/main.ffdeb605.chunk.css.map": "/kombucha-lab/static/css/main.ffdeb605.chunk.css.map",
-    "static/js/2.87cbbdff.chunk.js.LICENSE.txt": "/kombucha-lab/static/js/2.87cbbdff.chunk.js.LICENSE.txt"
+    "static/css/main.91994cb6.chunk.css.map": "/kombucha-lab/static/css/main.91994cb6.chunk.css.map",
+    "static/js/2.02c7775e.chunk.js.LICENSE.txt": "/kombucha-lab/static/js/2.02c7775e.chunk.js.LICENSE.txt",
+    "static/media/Lato-Light.ttf": "/kombucha-lab/static/media/Lato-Light.2fe27d9d.ttf",
+    "static/media/index.css": "/kombucha-lab/static/media/Lato-Regular.2d36b1a9.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.6759c975.js",
-    "static/js/2.87cbbdff.chunk.js",
-    "static/css/main.ffdeb605.chunk.css",
-    "static/js/main.23edd43c.chunk.js"
+    "static/js/2.02c7775e.chunk.js",
+    "static/css/main.91994cb6.chunk.css",
+    "static/js/main.c11ada8f.chunk.js"
   ]
 }

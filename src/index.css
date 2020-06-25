@@ -315,10 +315,10 @@ textarea {
   overflow: hidden;
 }
 
-/* Typography */	
+/* Typography */
 @font-face {
-  font-family: 'Lato';
-  src: local('Lato'), url(./fonts/Lato-Regular.ttf) format('truetype');
+  font-family: "Lato";
+  src: local("Lato"), url(./fonts/Lato-Regular.ttf) format("truetype");
 }
 
 /* General styles */
@@ -398,6 +398,10 @@ p {
   margin-right: 8.5%;
 }
 
+.btn-cart .icon {
+  font-size: 2.4rem;
+}
+
 .btn-add::after {
   content: "";
   position: absolute;
@@ -422,7 +426,9 @@ p {
 
 .btn-close:hover,
 .btn-close:focus,
-.icon {
+.icon,
+.footer-icon:hover,
+.footer-icon:focus {
   color: darkolivegreen;
 }
 
@@ -601,6 +607,11 @@ p {
   border-radius: 5px;
 }
 
+.btn-order:hover,
+.btn-order:focus {
+  background-color: darksalmon;
+}
+
 .add-overlay {
   position: fixed;
   top: 0;
@@ -664,6 +675,26 @@ p {
   position: absolute;
   bottom: 0;
   right: 40px;
+}
+
+/* Footer component */
+
+.footer {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.footer .col-auto {
+  margin: 10px;
+}
+
+.footer-icon {
+  font-size: 3rem;
+}
+
+.footer-juicery {
+  cursor: pointer;
+  margin-left: 5px;
 }
 
 @media (max-width: 980px) {

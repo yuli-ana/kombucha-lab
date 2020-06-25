@@ -9,7 +9,12 @@ const Footer = () => {
                 <div>
                     <p>
                         All product design and images credited to
-            <a href="https://www.villagejuicery.com/">Village Juicery</a>
+                        <a
+                            className="footer-juicery"
+                            href="https://www.villagejuicery.com/"
+                            target="_blanc"
+                            rel="noopener noreferrer">Village Juicery
+                        </a>
                     </p>
                     <p>Built by Yuliana Hazda, 2020</p>
                 </div>

@@ -12,16 +12,21 @@ class App extends Component {
   constructor() {
     super();
 
+
     this.state = {
-      dataArr: [],
+
+      firebaseData: [],
+      // Store id property of each cart with individual counter value
       count: {},
+      newPrice: [],
       cartCounter: 0,
-      modalArr: [
+      modalCarts: [
       ],
     }
   }
 
 
+  // Get data from Firebase
   componentDidMount() {
     const dbRef = firebase.database().ref();
 
@@ -35,25 +40,37 @@ class App extends Component {
       }
 
       this.setState({
-        dataArr: newState,
+        firebaseData: newState,
       })
     })
   }
 
+  // Event handler for cart click
   handleClick = (id) => {
-    const newItem = this.state.dataArr.find(item => item.id === id);
 
-    let currentCount = this.state.count[newItem.id] || 0;
+    // Find, if clicked cart ID matches product ID in 'firebaseData' object
+    const findId = this.state.firebaseData.find(item => item.id === id);
+    
+    // Store new property (in 'count' object) as matching item ID or '0' 
+    let currentCount = this.state.count[findId.id] || 0;
 
-
+    console.log(findId.id);
+    
+    // Update state
     this.setState({
-      modalArr: [...this.state.modalArr, newItem],
+      // Spread old value and add new value (ID), map over modalCarts to render carts in a 'ModalList'
+      modalCarts: [
+        ...this.state.modalCarts, findId, 
+      ],
+
+      // Spread old id value and update matching id value on click
       count: {
         ...this.state.count,
-        [newItem.id]: currentCount + 1
+        [findId.id]: currentCount + 1
       },
-
-      cartCounter: this.state.cartCounter + 1,
+      
+      // Update item count in cart
+      cartCounter: this.state.cartCounter + 1,      
     })
   }
 
@@ -63,12 +80,11 @@ class App extends Component {
       <Fragment>
         <div className="overflow-hidden">
           <Header />
-          <FixedBar totalCounter={this.state.cartCounter} count={this.state.count} items={this.state.modalArr} />
+          <FixedBar cartCounter={this.state.cartCounter} count={this.state.count} modalCarts={this.state.modalCarts} />
           <Main>
             <CatalogueList>
-              {this.state.dataArr.map(item => {
+              {this.state.firebaseData.map(item => {
                 return (
-                  //Created a separate item component
                   <CatalogueItem key={item.id} id={item.id} name={item.name} price={item.price} image={item.image} updateCount={() => this.handleClick(item.id)} itemCounter={this.state.count[item.id] || 0} />
                 )
               })}

@@ -1,12 +1,20 @@
 import React from 'react';
+import TotalPrice from '../modal/TotalPrice';
 
-const CompleteOrder = () => {
+
+const CompleteOrder = ({ modalCarts, count }) => {
     return (
         <div className='modal-order'>
-            {/* Update price dynamically */}
-    {/* <span>total <span></span></span> */}
-            <a className='btn-order' href='https://www.villagejuicery.com/collections/kombucha' target="_blank"
-              rel="noopener noreferrer">BUY</a>
+            <TotalPrice
+                count={count}
+                modalCarts={modalCarts}
+            />
+            <a
+                className='btn-order'
+                href='https://www.villagejuicery.com/collections/kombucha'
+                target="_blank"
+                rel="noopener noreferrer"
+            >BUY</a>
         </div>
     )
 }

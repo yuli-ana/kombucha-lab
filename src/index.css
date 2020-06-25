@@ -315,12 +315,11 @@ textarea {
   overflow: hidden;
 }
 
-/* Typography */
-/* @font-face {
-  font-family: Lato;
-  src: url(/assets/fonts/Lato.woff2) format("woff2"),
-    url(/assets/fonts/Lato.woff) format("woff");
-} */
+/* Typography */	
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), url(./fonts/Lato-Regular.ttf) format('truetype');
+}
 
 /* General styles */
 
@@ -578,6 +577,12 @@ p {
   font-size: 2rem;
   margin: 40px 0 80px;
   text-align: center;
+}
+
+.modal-total {
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 /* CompleteOrder component */

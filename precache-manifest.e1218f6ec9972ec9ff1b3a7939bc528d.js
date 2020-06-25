@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "463943a356d99ed8f5967747547c4e31",
+    "revision": "ebd9854666385479e258888d8b178e93",
     "url": "/kombucha-lab/index.html"
   },
   {
-    "revision": "1070e715558f10ef2e93",
-    "url": "/kombucha-lab/static/css/main.6c4b6d0f.chunk.css"
+    "revision": "26e30813f142e6a6fc5b",
+    "url": "/kombucha-lab/static/css/main.ffdeb605.chunk.css"
   },
   {
     "revision": "059a0f53b92be9d09266",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kombucha-lab/static/js/2.87cbbdff.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1070e715558f10ef2e93",
-    "url": "/kombucha-lab/static/js/main.a91132f7.chunk.js"
+    "revision": "26e30813f142e6a6fc5b",
+    "url": "/kombucha-lab/static/js/main.cb27b9d8.chunk.js"
   },
   {
     "revision": "8c95a7ab9e736341fd44",

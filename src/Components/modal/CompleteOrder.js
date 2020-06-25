@@ -2,9 +2,11 @@ import React from 'react';
 
 const CompleteOrder = () => {
     return (
-        <div>
-            <span>total <span>$11.00</span></span>
-            <a href='https://www.villagejuicery.com/collections/kombucha' target='_blank' rel='noopener noreferer' >BUY</a>
+        <div className='modal-order'>
+            {/* Update price dynamically */}
+    {/* <span>total <span></span></span> */}
+            <a className='btn-order' href='https://www.villagejuicery.com/collections/kombucha' target="_blank"
+              rel="noopener noreferrer">BUY</a>
         </div>
     )
 }

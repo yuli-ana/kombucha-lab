@@ -478,7 +478,7 @@ p {
   flex-wrap: wrap;
 }
 
-/* Header */
+/* Header component */
 
 .header {
   background-image: url("https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
@@ -503,16 +503,18 @@ p {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header-title h1 {
   font-size: 5rem;
   font-weight: bold;
   text-transform: uppercase;
+  z-index: 1;
+  letter-spacing: 2px;
 }
 
-/* Fixed Bar */
+/* FixedBar component */
 
 .fixed-bar {
   position: fixed;
@@ -529,7 +531,7 @@ p {
   z-index: 10;
 }
 
-/* Catalogue */
+/* Catalogue component */
 
 .catalogue-item {
   border: 1px solid yellowgreen;
@@ -558,13 +560,13 @@ p {
   margin-bottom: 15px;
 }
 
-/* Modal */
+/* Modal component */
 
 .modal {
   position: absolute;
   top: 0;
-  right: -45%;
-  width: 45%;
+  right: -40%;
+  width: 40%;
   height: 100vh;
   padding: 40px 50px;
   overflow: scroll;
@@ -576,6 +578,22 @@ p {
   font-size: 2rem;
   margin: 40px 0 80px;
   text-align: center;
+}
+
+/* CompleteOrder component */
+
+.modal-order {
+  text-align: center;
+  margin: 70px 0 50px;
+}
+
+.btn-order {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px 0;
+  background-color: bisque;
+  border-radius: 5px;
 }
 
 .add-overlay {
@@ -597,7 +615,7 @@ p {
   right: 0;
 }
 
-/* Cart List */
+/* CartList component */
 
 .cart-item-image {
   border-right: 1px solid darksalmon;
@@ -721,7 +739,7 @@ p {
 
   .modal {
     width: 100%;
-    right: -100%;
+    right: -120%;
   }
 
   .modal-list-title {

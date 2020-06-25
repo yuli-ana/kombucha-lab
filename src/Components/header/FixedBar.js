@@ -30,12 +30,12 @@ class FixedBar extends Component {
         return (
             <Fragment>
                 <div className='fixed-bar'>
-                    <button onClick={this.handleCartClick} className='btn btn-cart'><FontAwesomeIcon className='icon' icon={faShoppingCart} />{this.props.totalCounter}</button>
+                    <button onClick={this.handleCartClick} className='btn btn-cart'><FontAwesomeIcon className='icon' icon={faShoppingCart} />{this.props.cartCounter}</button>
                     <div className={`modal ${this.state.activeModal ? 'open-modal' : 'modal'}`}>
                         <div className={this.state.activeModal ? 'add-overlay' : 'remove-overlay'}></div>
                         <button onClick={this.handleClick} className='btn btn-close'><FontAwesomeIcon icon={faTimes} /></button>
-                        <ModalList total={this.props.totalCounter}>
-                            {(this.props.items || [])
+                        <ModalList cartCounter={this.props.cartCounter}>
+                            {(this.props.modalCarts || [])
                                 .reduce((acc, value) => {
 
                                     if (!acc.find(item => item.id === value.id)) {
@@ -46,12 +46,12 @@ class FixedBar extends Component {
                                 }, [])
                                 .map((item, i) => {
                                     return (
-                                        <ModalItem key={i} name={item.name} price={item.price} currentIdCount={this.props.count[item.id]} image={item.image} />
+                                        <ModalItem  key={i} name={item.name} price={item.price} currentIdCount={this.props.count[item.id]} image={item.image} />
                                     )
                                 })
                             }
                         </ModalList>
-                        <CompleteOrder/>
+                        <CompleteOrder />
                     </div>
                 </div>
             </Fragment>

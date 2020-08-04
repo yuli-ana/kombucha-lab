@@ -1,4 +1,4 @@
-# Project 5 "Kombucha Lab"
+# "Kombucha Lab" |React|Javascript|HTML|CSS|API|
 
 "Kombucha Lab" it's an e-commerce app made with React and Firebase database. The app allows user to select favourite Kombucha drink add them to the cart.
 
